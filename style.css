@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background: url(img/Capa\ youtube\ thumbnail\ tons\ de\ preto\ e\ amarelo\ \(2\).png);
+    background-repeat: none;
+    background-size: cover;
+    font-family: "Poppins", serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100dvh;
+    position: relative;
+    display: flex;
+
+}
+
+:root{
+    --color2: red;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(17, 16, 16),rgb(46, 45, 45),rgb(17, 16, 16));
+    box-shadow: 0px 0px 150px rgba(73, 72, 72, 0.3);
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    width: 420px;
+    height: 200px;
+    padding: 30px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 20%;
+    top: 90px;
+    position: absolute;
+
+}
+#caixa{
+    display: none;
+}
+#main{
+    display: flex;
+}
+.lucky-box{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(17, 16, 16),rgb(46, 45, 45),rgb(17, 16, 16));
+    box-shadow: 0px 0px 150px rgba(73, 72, 72, 0.3);
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    width: 620px;
+    height: 400px;
+    padding: 30px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 30%;
+    top: 25%;
+    position: absolute;
+    display: none;
+
+}
+.container input {
+    transition: 0.5s;
+    width: 350px;
+    height: 25px;
+    margin-top: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+} 
+
+.btn{
+    background: rgb(46, 45, 45);
+    transition: 0.3s;
+    margin-top: 5px;
+    padding: 10px;
+    width: 350px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    opacity: 0.3; 
+    
+}
+.block{
+    pointer-events: none;
+    color: white;  
+
+}
+.done{
+    transition: 0.2S;
+    transition: 0.3s;
+    background: var(--color2);
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 100dvh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: url(img/Sushi\ delivery\ vermelho\ simples\ story\ \(1\).png);
+        background-size: 100%;
+        background-position: top;
+
+    }
+    .container{
+        width: 75%;
+        left: 5%;
+        top: 3%;
+        height: auto;
+      
+    }
+    .container input button{
+        width: 75%;
+        left: 5%;
+        top: 3%;
+        height: auto;
+    }
+   
+    .container button{
+        width: 75%;
+        left: 5%;
+        top: 3%;
+        height: auto;
+    }
+    .lucky-box{
+        width: 75%;
+        left: 5%;
+
+    }
+    #promo-text{
+    margin-right: 50px;
+    }
+}
+@media screen and (max-width: 586px){ /*Para Iphone SE*/
+    .container input{
+        width: 75%;
+        left: 5%;
+        top: 3%;
+        height: auto;
+        margin-left: 10px;
+    }
+
+}
+.lucky-box{
+  top: 10%;
+}
+#promo-text{
+    bottom: 20%;
+    }
+@media screen and (max-width: 1024px) and (min-width: 768px) { /*Para Ipad*/
+ body{
+    background: url(img/Sushi\ delivery\ vermelho\ simples\ story\ \(1\).png);
+    background-position: top ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+ }
+ .container{
+    width: 75%;
+    left: 10%;
+    height: 200px;
+  
+}
+ .lucky-box{
+    width: 75%;
+    left: 10%;
+
+}
+#promo-text{
+    margin-right: 20%;
+    top: 60%;
+    }
+    
+}
+.button-sushi{
+    width: 90px;
+    height: 40px;
+    font-family: "Poppins", serif;
+    color: white;
+    background: rgb(71, 71, 71);;
+    border-radius: 15px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    opacity: 0.3;
+    margin-top: 20px;
+}
+.button-sushi:hover{
+    opacity: 1;
+    transition: 0.4s;
+    background: var(--color2);
+}
+.space-between{
+    top: 3%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#promo-text{
+    font-family: "Poppins", serif;
+    position: absolute;
+    color: white;
+    left: 19%;
+    bottom: 14%;
+    text-align: center;
+}
+.taller-input{
+    transition: 0.5s;
+    font-size: medium;
+}
